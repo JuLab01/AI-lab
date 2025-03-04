@@ -46,7 +46,7 @@ int A_star(vector<vector<pair<int,int>>>& adj, unordered_map<int,pair<int,int>>&
                 pq.push({dist[adjNode] + heuristic(adjNode) - heuristic(source), adjNode});
             }
             
-        }
+        }   
     }
 
     return INT_MAX;
